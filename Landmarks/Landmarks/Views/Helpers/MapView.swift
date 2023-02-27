@@ -9,18 +9,18 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    
+
     @State private var region = MKCoordinateRegion()
-    
+
     var coordinate: CLLocationCoordinate2D
-    
+
     var body: some View {
         Map(coordinateRegion: $region)
             .onAppear {
                 setRegion(coordinate)
             }
     }
-    
+
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,

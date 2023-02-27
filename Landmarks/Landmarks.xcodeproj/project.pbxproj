@@ -34,6 +34,7 @@
 		FE90A78829AC1A3600FBC0C1 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A78429AC1A3600FBC0C1 /* HikeGraph.swift */; };
 		FE90A78929AC1A3600FBC0C1 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A78529AC1A3600FBC0C1 /* HikeDetail.swift */; };
 		FE90A78A29AC1A3600FBC0C1 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A78629AC1A3600FBC0C1 /* HikeView.swift */; };
+		FE90A78E29AD4B6100FBC0C1 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A78D29AD4B6100FBC0C1 /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		FE90A78429AC1A3600FBC0C1 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		FE90A78529AC1A3600FBC0C1 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		FE90A78629AC1A3600FBC0C1 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		FE90A78D29AD4B6100FBC0C1 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		FE1CB53C299AFC0A00C6EA70 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE90A78C29AD4B4F00FBC0C1 /* Categories */,
 				FE6BA62C299AEBD00005972E /* ContentView.swift */,
 				FE90A78229AC1A3600FBC0C1 /* Hikes */,
 				FE90A77D29AB021C00FBC0C1 /* Badges */,
@@ -243,6 +246,14 @@
 			path = Hikes;
 			sourceTree = "<group>";
 		};
+		FE90A78C29AD4B4F00FBC0C1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FE90A78D29AD4B6100FBC0C1 /* CategoryHome.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +264,7 @@
 				FE6BA623299AEBD00005972E /* Sources */,
 				FE6BA624299AEBD00005972E /* Frameworks */,
 				FE6BA625299AEBD00005972E /* Resources */,
+				FE90A78B29AD237600FBC0C1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -370,12 +382,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FE90A78B29AD237600FBC0C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE6BA623299AEBD00005972E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE6BA62D299AEBD00005972E /* ContentView.swift in Sources */,
+				FE90A78E29AD4B6100FBC0C1 /* CategoryHome.swift in Sources */,
 				FE90A78829AC1A3600FBC0C1 /* HikeGraph.swift in Sources */,
 				FE90A77C29AB013E00FBC0C1 /* Badge.swift in Sources */,
 				FE1CB535299AF7E500C6EA70 /* MapView.swift in Sources */,
