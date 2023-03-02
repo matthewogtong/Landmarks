@@ -45,6 +45,7 @@
 		FE90A7A229AFBF8A00FBC0C1 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A7A129AFBF8A00FBC0C1 /* PageViewController.swift */; };
 		FE90A7A429AFC15F00FBC0C1 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A7A329AFC15F00FBC0C1 /* FeatureCard.swift */; };
 		FE90A7A629AFC45100FBC0C1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A7A529AFC45100FBC0C1 /* PageView.swift */; };
+		FE90A7A829B1120400FBC0C1 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE90A7A729B1120400FBC0C1 /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		FE90A7A129AFBF8A00FBC0C1 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		FE90A7A329AFC15F00FBC0C1 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		FE90A7A529AFC45100FBC0C1 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		FE90A7A729B1120400FBC0C1 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FE90A7A129AFBF8A00FBC0C1 /* PageViewController.swift */,
+				FE90A7A729B1120400FBC0C1 /* PageControl.swift */,
 				FE90A7A329AFC15F00FBC0C1 /* FeatureCard.swift */,
 				FE90A7A529AFC45100FBC0C1 /* PageView.swift */,
 			);
@@ -463,6 +466,7 @@
 				FE1CB535299AF7E500C6EA70 /* MapView.swift in Sources */,
 				FE90A78729AC1A3600FBC0C1 /* GraphCapsule.swift in Sources */,
 				FE6BA62B299AEBD00005972E /* LandmarksApp.swift in Sources */,
+				FE90A7A829B1120400FBC0C1 /* PageControl.swift in Sources */,
 				FE90A73929A3EA9800FBC0C1 /* FavoriteButton.swift in Sources */,
 				FE90A79229AD520800FBC0C1 /* CategoryItem.swift in Sources */,
 				FE90A78929AC1A3600FBC0C1 /* HikeDetail.swift in Sources */,
